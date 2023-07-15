@@ -1,10 +1,10 @@
 import Link from "next/link";
 import React from "react";
 
-const AopBar = () => {
+const AppBar = () => {
   return (
     <div>
-      <header className="flex gap-4 p-4 bg-gradient-to-b from-white to-slate-300 shadow">
+      <header className="flex gap-4 p-4 bg-gradient-to-b from-slate-900 to-slate-600 shadow">
         <Link href={`/`} className="transition-colors hover:text-blue-400">
           Home Page
         </Link>
@@ -16,4 +16,4 @@ const AopBar = () => {
   );
 };
 
-export default AopBar;
+export default AppBar;
