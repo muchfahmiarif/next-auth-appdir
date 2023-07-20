@@ -15,8 +15,10 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
   return (
     <html lang="en">
       <body className={inter.className}>
-        <AppBar />
-        <Providers>{children}</Providers>
+        <Providers>
+          <AppBar />
+          {children}
+        </Providers>
       </body>
     </html>
   );
